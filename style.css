@@ -39,3 +39,80 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
+
+/* ===== Bilder allgemein ===== */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== Hero-Bild ===== */
+
+.image-full {
+  margin: 2rem 0 3rem 0;
+}
+
+.image-full img {
+  width: 100%;
+  height: 55vh;        /* 55% der Bildschirmhöhe */
+  max-height: 550px;   /* nie höher als 550px */
+  object-fit: cover;   /* schöner Zuschnitt */
+}
+
+/* ===== Textbreite angenehmer ===== */
+
+.text-block {
+  max-width: 700px;
+  margin: 2rem 0;
+}
+
+/* ===== Collagenstreifen ===== */
+
+.image-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin: 3rem 0;
+}
+
+.image-strip img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* ===== Portraitbereich ===== */
+
+.portrait {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.portrait img {
+  width: 100%;
+  height: auto;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 768px) {
+
+  .image-full img {
+    height: 40vh;
+  }
+
+  .portrait {
+    grid-template-columns: 1fr;
+  }
+
+  .image-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
