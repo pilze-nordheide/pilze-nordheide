@@ -102,9 +102,9 @@ img {
 
 @media (max-width: 768px) {
 
-  .image-full img {
-    height: 40vh;
-  }
+.image-full img {
+  height: auto;
+}
 
   .portrait {
     grid-template-columns: 1fr;
