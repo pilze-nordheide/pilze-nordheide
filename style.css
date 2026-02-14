@@ -194,10 +194,13 @@ img {
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-  .main-nav a {
-  padding: 0.6rem 1rem;
-  text-align: left;
-  font-size: 0.95rem;
+.main-nav a {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.main-nav a:last-child {
+  border-bottom: none;
 }
 
   .burger {
