@@ -23,8 +23,8 @@ body {
 }
 main {
   max-width: 900px;
-  margin: 140px auto 2rem auto;
-  padding: 0 1rem;
+  margin: 0 auto 2rem auto;
+  padding: 100px 1rem 0 1rem;
 }
 
 footer {
@@ -201,6 +201,10 @@ img {
   .burger {
     display: flex;
   }
+  
+.burger {
+  z-index: 1100;
+}
 
   .main-nav.active {
     display: flex;
