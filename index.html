@@ -365,9 +365,16 @@
   document.addEventListener("DOMContentLoaded", function() {
     const burger = document.getElementById("burger");
     const nav = document.querySelector(".main-nav");
+    const links = document.querySelectorAll(".main-nav a");
 
     burger.addEventListener("click", function() {
       nav.classList.toggle("active");
+    });
+
+    links.forEach(link => {
+      link.addEventListener("click", function() {
+        nav.classList.remove("active");
+      });
     });
   });
 </script>
