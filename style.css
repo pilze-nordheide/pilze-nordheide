@@ -120,9 +120,11 @@ img {
   background: white;
   z-index: 1000;
   border-bottom: 1px solid #eee;
+  position: fixed;
 }
 
 .header-inner {
+  position: relative;  
   max-width: 1100px;
   margin: 0 auto;
   padding: 0.8rem 1rem;
