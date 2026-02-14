@@ -21,32 +21,6 @@ body {
   background-color: #fafafa;
   color: #222;
 }
-
-header {
-  background: #2f5d3a;
-  padding: 1rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-nav {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin-right: 1rem;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
 main {
   max-width: 900px;
   margin: 140px auto 2rem auto;
