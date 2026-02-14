@@ -180,23 +180,25 @@ img {
 
 @media (max-width: 768px) {
 
-  .main-nav {
+.main-nav {
   position: absolute;
   top: 100%;
-  right: 1rem;
-  width: 220px;
+  right: 0;
+  width: 180px;              /* schmaler */
   background: white;
   flex-direction: column;
   display: none;
-  padding: 1rem;
+  padding: 0.6rem 0;         /* weniger Innenabstand */
   box-sizing: border-box;
-  border-radius: 8px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
   .main-nav a {
-    padding: 0.6rem 0;
-  }
+  padding: 0.6rem 1rem;
+  text-align: left;
+  font-size: 0.95rem;
+}
 
   .burger {
     display: flex;
