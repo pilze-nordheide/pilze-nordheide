@@ -192,6 +192,7 @@ img {
   box-sizing: border-box;
   border-radius: 6px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  gap: 0;   /* FIX */
 }
 
 .main-nav a {
