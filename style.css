@@ -127,4 +127,14 @@ img {
   }
 
 }
+/* Danke-Seite nur anzeigen, wenn #danke aktiv ist */
+
+.danke-section {
+  display: none;
+}
+
+#danke:target {
+  display: block;
+  margin-top: 120px;
+}
 
