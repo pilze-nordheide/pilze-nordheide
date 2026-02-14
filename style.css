@@ -205,6 +205,10 @@ img {
 .burger {
   z-index: 1100;
 }
+  
+body {
+  overflow-x: hidden;
+}
 
   .main-nav.active {
     display: flex;
