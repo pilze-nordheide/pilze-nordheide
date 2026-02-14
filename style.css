@@ -175,16 +175,18 @@ img {
 @media (max-width: 768px) {
 
   .main-nav {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: white;
-    flex-direction: column;
-    width: 100%;
-    padding: 1.5rem;
-    display: none;
-    border-bottom: 1px solid #eee;
-  }
+  position: absolute;
+  top: 100%;
+  right: 1rem;
+  width: 220px;
+  background: white;
+  flex-direction: column;
+  display: none;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
 
   .main-nav a {
     padding: 0.6rem 0;
