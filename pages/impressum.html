@@ -15,11 +15,14 @@
       <img src="../images/logo-pilz-nordheide.png" alt="Pilze Nordheide Logo">
     </a>
 
-    <nav class="main-nav">
-      <a href="../index.html#ueber-mich">Über mich</a>
-      <a href="../index.html#termine">Termine</a>
-      <a href="../index.html#kontakt">Kontakt</a>
-    </nav>
+  <nav class="main-nav">
+  <a href="../index.html#start">Start</a>
+  <a href="../index.html#ueber-mich">Über mich</a>
+  <a href="../index.html#termine">Termine</a>
+  <a href="../index.html#newsletter">Newsletter</a>
+  <a href="../index.html#kontakt">Kontakt</a>
+  <a href="https://www.instagram.com/pilze_nordheide/" target="_blank">Instagram</a>
+</nav>
   </div>
 </header>
 
@@ -60,6 +63,16 @@
     <a href="../index.html">Zurück zur Startseite</a>
   </div>
 </footer>
+<script>
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.main-nav');
+
+  if (burger) {
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  }
+</script>
 
 </body>
 </html>
