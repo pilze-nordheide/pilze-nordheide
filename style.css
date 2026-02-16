@@ -267,3 +267,30 @@ img {
     overflow-x: hidden;
   }
 }
+/* ================= LEGAL PAGES ================= */
+
+.legal-page {
+  max-width: 820px;
+  margin: 160px auto 80px auto;
+  padding: 0 20px;
+  line-height: 1.7;
+}
+
+.legal-page h1 {
+  margin-bottom: 40px;
+}
+
+.legal-page h2 {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #2f5d3a;
+}
+
+.legal-page p {
+  margin-bottom: 18px;
+}
+
+.legal-page a {
+  color: #2f5d3a;
+  text-decoration: underline;
+}
