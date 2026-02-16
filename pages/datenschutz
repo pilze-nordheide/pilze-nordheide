@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Datenschutz | Pilze Nordheide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../index.html#start" class="logo">
+      <img src="../images/logo-pilz-nordheide.png" alt="Pilze Nordheide Logo">
+    </a>
+
+    <nav class="main-nav">
+      <a href="../index.html#ueber-mich">Über mich</a>
+      <a href="../index.html#termine">Termine</a>
+      <a href="../index.html#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main class="legal-page">
+
+<h1>Datenschutzerklärung</h1>
+
+<h2>1. Verantwortliche</h2>
+<p>
+Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br>
+Finnja Anders<br>
+21255 Tostedt<br>
+E-Mail: finnja.anders@posteo.de
+</p>
+
+<h2>2. Hosting</h2>
+<p>
+Diese Website wird über GitHub Pages betrieben, ein Dienst der
+GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA.
+Beim Aufruf der Website werden technisch notwendige Daten
+(z.B. IP-Adresse, Browsertyp, Zeitpunkt des Zugriffs)
+durch GitHub verarbeitet.
+</p>
+
+<h2>3. Kontaktaufnahme</h2>
+<p>
+Wenn Sie per E-Mail Kontakt aufnehmen,
+werden Ihre Angaben zwecks Bearbeitung der Anfrage gespeichert.
+Diese Daten gebe ich nicht ohne Ihre Einwilligung weiter.
+</p>
+
+<h2>4. Newsletter</h2>
+<p>
+Für den Versand meines Newsletters nutze ich den Dienst Brevo
+(ehemals Sendinblue), Anbieter: Sendinblue GmbH, Köpenicker Straße 126, 10179 Berlin.
+</p>
+
+<p>
+Wenn Sie sich für den Newsletter anmelden, werden die von Ihnen
+eingegebenen Daten (E-Mail-Adresse) auf den Servern von Brevo gespeichert.
+Die Anmeldung erfolgt im Double-Opt-In-Verfahren.
+</p>
+
+<p>
+Sie können den Newsletter jederzeit über den Abmeldelink
+in jeder E-Mail abbestellen.
+</p>
+
+<h2>5. Ihre Rechte</h2>
+<p>
+Sie haben jederzeit das Recht auf Auskunft über Ihre gespeicherten Daten,
+sowie auf Berichtigung, Löschung oder Einschränkung der Verarbeitung.
+Außerdem steht Ihnen ein Beschwerderecht bei der zuständigen
+Datenschutzaufsichtsbehörde zu.
+</p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="../index.html">Zurück zur Startseite</a>
+  </div>
+</footer>
+
+</body>
+</html>
