@@ -1,3 +1,5 @@
+/* ================= RESET ================= */
+
 * {
   box-sizing: border-box;
 }
@@ -6,31 +8,57 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+  background-color: #fafafa;
+  color: #222;
+}
+
+/* ================= LAYOUT ================= */
+
 section[id] {
   scroll-margin-top: 80px;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  background-color: #fafafa;
-  color: #222;
-}
 main {
   max-width: 900px;
-  margin: 0 auto 2rem auto;
-  padding: 100px 1rem 0 1rem;
+  margin: 0 auto 3rem auto;
+  padding: 110px 1.2rem 0 1.2rem;
 }
 
-footer {
-  background: #eee;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+/* ================= TYPOGRAFIE ================= */
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #2f5d3a;
 }
 
-/* ===== Bilder allgemein ===== */
+h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 0.8rem;
+  color: #2f5d3a;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #2f5d3a;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ================= BILDER ================= */
 
 img {
   max-width: 100%;
@@ -38,7 +66,7 @@ img {
   display: block;
 }
 
-/* ===== Hero-Bild ===== */
+/* Hero Bild */
 
 .image-full {
   margin: 2rem 0 3rem 0;
@@ -46,19 +74,19 @@ img {
 
 .image-full img {
   width: 100%;
-  height: 55vh;        /* 55% der Bildschirmhöhe */
-  max-height: 550px;   /* nie höher als 550px */
-  object-fit: cover;   /* schöner Zuschnitt */
+  height: 55vh;
+  max-height: 550px;
+  object-fit: cover;
 }
 
-/* ===== Textbreite angenehmer ===== */
+/* Textblock */
 
 .text-block {
   max-width: 700px;
   margin: 2rem 0;
 }
 
-/* ===== Collagenstreifen ===== */
+/* Bildstreifen */
 
 .image-strip {
   display: grid;
@@ -73,48 +101,16 @@ img {
   object-fit: cover;
 }
 
-/* ===== Portraitbereich ===== */
+/* Portrait */
 
 .portrait {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 2.5rem;
   align-items: center;
   margin: 3rem 0;
 }
 
-.portrait img {
-  width: 100%;
-  height: auto;
-}
-
-/* ===== Responsive ===== */
-
-@media (max-width: 768px) {
-
-.image-full img {
-  height: auto;
-}
-
-  .portrait {
-    grid-template-columns: 1fr;
-  }
-
-  .image-strip {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-}
-/* Danke-Seite nur anzeigen, wenn #danke aktiv ist */
-
-.danke-section {
-  display: none;
-}
-
-#danke:target {
-  display: block;
-  margin-top: 120px;
-}
 /* ================= HEADER ================= */
 
 .site-header {
@@ -124,14 +120,12 @@ img {
   background: white;
   z-index: 1000;
   border-bottom: 1px solid #eee;
-  position: fixed;
 }
 
 .header-inner {
-  position: relative;  
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0.8rem 1rem;
+  padding: 0.8rem 1.2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -139,11 +133,7 @@ img {
 
 .logo img {
   height: 32px;
-  width: auto;
-  display: block;
 }
-
-/* Navigation Desktop */
 
 .main-nav {
   display: flex;
@@ -151,9 +141,8 @@ img {
 }
 
 .main-nav a {
-  text-decoration: none;
-  color: #2f5d3a;
   font-weight: 500;
+  color: #2f5d3a;
   transition: opacity 0.2s ease;
 }
 
@@ -161,7 +150,7 @@ img {
   opacity: 0.6;
 }
 
-/* Burger hidden on desktop */
+/* Burger */
 
 .burger {
   display: none;
@@ -176,65 +165,105 @@ img {
   background: #2f5d3a;
 }
 
-/* ================= MOBILE ================= */
-
-@media (max-width: 768px) {
-
-.main-nav {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  width: 180px;              /* schmaler */
-  background: white;
-  flex-direction: column;
-  display: none;
-  padding: 0.6rem 0;         /* weniger Innenabstand */
-  box-sizing: border-box;
-  border-radius: 6px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  gap: 0;   /* FIX */
-}
-
-.main-nav a {
-  padding: 0.7rem 1rem;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.main-nav a:last-child {
-  border-bottom: none;
-}
-
-  .burger {
-    display: flex;
-  }
-  
-.burger {
-  z-index: 1100;
-}
-  
-body {
-  overflow-x: hidden;
-}
-
-  .main-nav.active {
-    display: flex;
-  }
-}
+/* ================= FOOTER ================= */
 
 .site-footer {
-  margin-top: 80px;
-  padding: 30px 20px;
+  margin-top: 100px;
+  padding: 40px 20px;
   background: #f4f4f1;
   text-align: center;
   font-size: 14px;
+  border-top: 1px solid #e5e5e5;
 }
 
 .site-footer a {
   margin: 0 15px;
-  text-decoration: none;
-  color: #2e2e2e;
+  color: #2f5d3a;
 }
 
 .site-footer a:hover {
   text-decoration: underline;
+}
+
+/* ================= RECHTSSEITEN SPEZIELL ================= */
+
+.legal-page {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.legal-page h1 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.legal-page h2 {
+  margin-top: 2.2rem;
+}
+
+.legal-page p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* leichte optische Trennung */
+
+.legal-page h2:not(:first-of-type) {
+  padding-top: 1.2rem;
+  border-top: 1px solid #eee;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+  main {
+    padding: 100px 1rem 0 1rem;
+  }
+
+  .portrait {
+    grid-template-columns: 1fr;
+  }
+
+  .image-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image-full img {
+    height: auto;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    width: 200px;
+    background: white;
+    flex-direction: column;
+    display: none;
+    padding: 0.8rem 0;
+    border-radius: 6px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  }
+
+  .main-nav a {
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .main-nav a:last-child {
+    border-bottom: none;
+  }
+
+  .main-nav.active {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
 }
